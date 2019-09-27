@@ -22,6 +22,6 @@ Run the composer update command, this updates the composer packages and runs php
 `sh build.sh` or `./build.sh` if the file is executable; this will also run phptest.sh
 
 ## Run
-`sudo php -S localhost:80 -t public`
+`sh runlocal.sh` or `./runlocal.sh` if the file is executable
 
 Navigate to [localhost](http://localhost/)
