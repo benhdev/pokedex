@@ -1,8 +1,21 @@
 {
-  "name": "ukfast/pokedex",
-  "description": "The UKFast PHP developer test",
+  "name": "benhdev/pokedex",
+  "description": "pokedex by benhdev",
   "type": "project",
-  "require": {},
+  "require": {
+    "php": "^7.3",
+    "danrovito/pokephp": "^1.3"
+  },
+  "autoload": {
+    "classmap": [
+      "src/php"
+    ]
+  },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  },
+  "scripts": {
+    "post-update-cmd": "./build.sh"
+  }
 }
