@@ -1,0 +1,27 @@
+<div class="pokemon-card-info">
+	<h2 class="pokemon-species"><?= $modelPokemon->getSpecies(); ?></h2>
+	<h2 class="pokemon-height"><?= $modelPokemon->getHeight(); ?> m</h2>
+	<h2 class="pokemon-weight"><?= $modelPokemon->getWeight(); ?> kg</h2>
+	<div class="pokemon-abilities-container">
+		<button class="pokemon-abilities">View Abilities <i class="fas fa-arrow-right"></i></button>
+		<!-- <div class="row"> -->
+
+			<!-- foreach($modelPokemon->getAbilities() as $pokemonAbility) {
+				include 'includes/pokemon-ability.phtml';
+			} -->
+
+		<!-- </div> -->
+	</div>
+</div>
+<div class="pokemon-card-info pokemon-card-abilities" style="display: none;">
+	<?php
+
+	foreach($modelPokemon->getAbilities() as $pokemonAbility) {
+		include 'includes/pokemon-ability.phtml';
+	}
+
+	?>
+	<div class="pokemon-abilities-container">
+		<button class="pokemon-info"><i class="fas fa-arrow-left"></i> Back</button>
+	</div>
+</div>

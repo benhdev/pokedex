@@ -1,0 +1,18 @@
+<div class="pokemon-card col-md-4">
+	<div class="pokemon-card-inner">
+		<img class="pokemon-image" src=<?= 
+			empty($modelPokemon->getImage()) ? '/includes/bad-result-image.png' : $modelPokemon->getImage();
+		?> />
+		<h1 class="pokemon-name"><?= $modelPokemon->getName(); ?></h1>
+		<?php
+
+		if($modelPokemon->isBadResult()) {
+			include 'includes/pokemon-bad-result.phtml';
+		} else {
+			include 'includes/pokemon-info.phtml';
+		}
+
+		?>
+		
+	</div>
+</div>
