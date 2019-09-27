@@ -6,7 +6,7 @@
 - git
 
 ## Getting started
-Clone the repository  return
+Clone the repository  
 `git clone https://github.com/benhdev/pokedex.git`
 
 Enter the repository
