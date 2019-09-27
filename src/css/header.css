@@ -1,0 +1,39 @@
+.header-container {
+	float: left;
+	position: relative;
+	display: inline-block;
+	height: 40%;
+	width: 100%;
+
+	background-color: rgb(40, 40, 40);
+	color: white;
+}
+
+.header-container > .center-wrap {
+	width: 100%;
+}
+.header-container .header-title {
+	text-align: center;
+	font-size: 60px;
+	font-weight: 900;
+}
+
+.header-container .search-form {
+	text-align: center;
+}
+
+.header-container .search-form > .search-input {
+	color: rgb(40, 40, 40);
+	font-weight: 600;
+	padding: 5px 10px;
+	border-radius: 2px;
+	border: none;
+}
+.header-container .search-form > .search-input::placeholder {
+	color: rgba(40, 40, 40, 0.5);
+}
+
+.header-container .search-form > .search-input:focus,
+.header-container .search-form > .search-input:active {
+	outline: none;
+}

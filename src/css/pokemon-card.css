@@ -1,0 +1,85 @@
+.pokemon-container {
+	float: left;
+	width: 100%;
+
+	text-align: center;
+
+	padding: 60px 0;
+}
+
+.pokemon-card {
+	padding: 15px;
+}
+.pokemon-card:only-child {
+	margin: auto;
+}
+
+.pokemon-image {
+	display: block;
+	margin: auto;
+
+	height: 80px;
+	width: auto;
+}
+
+@keyframes spin {
+    0% {transform: rotate3d(0deg);}
+    50% {transform: rotate3d(0, 1, 0, 90deg);}
+    100% {transform: rotate3d(0, 1, 0, 0deg);}
+}
+
+.pokemon-card > .pokemon-card-inner {
+	height: 275px;
+	position: relative;
+	color: white;
+	background: rgb(40, 40, 40);
+	border-radius: 5px;
+	padding: 10px;
+}
+.pokemon-card > .pokemon-card-inner > .pokemon-card-info {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 80%;
+	margin: auto;
+	bottom: 10px;
+	text-align: right;
+}
+.pokemon-card > .pokemon-card-inner > .pokemon-name {
+	font-size: 24px;
+	font-weight: 600;
+	/*margin-bottom: 20px;*/
+}
+
+.pokemon-card > .pokemon-card-inner > .pokemon-card-info > .pokemon-height,
+.pokemon-card > .pokemon-card-inner > .pokemon-card-info > .pokemon-species,
+.pokemon-card > .pokemon-card-inner > .pokemon-card-info > .pokemon-weight,
+.pokemon-card > .pokemon-card-inner > .pokemon-card-info > .pokemon-abilities-container,
+.pokemon-card > .pokemon-card-inner > .pokemon-card-abilities > .pokemon-ability {
+	font-size: 16px;
+	font-weight: 100;
+	padding: 5px;
+}
+
+.pokemon-card > .pokemon-card-inner > .pokemon-card-info > .pokemon-height,
+.pokemon-card > .pokemon-card-inner > .pokemon-card-info > .pokemon-species,
+.pokemon-card > .pokemon-card-inner > .pokemon-card-info > .pokemon-weight,
+.pokemon-card > .pokemon-card-inner > .pokemon-card-abilities > .pokemon-ability {
+	margin: 0;
+	border-bottom: 1px solid white;
+}
+
+.pokemon-card > .pokemon-card-inner > .pokemon-card-info > .pokemon-abilities-container > .pokemon-abilities,
+.pokemon-card > .pokemon-card-inner > .pokemon-card-abilities > .pokemon-abilities-container > .pokemon-info {
+	color: white;
+	background: none;
+	border: none;
+	outline: none;
+	padding: 0;
+	font-weight: 100;
+}
+
+.pokemon-card > .pokemon-card-inner > .pokemon-card-abilities {
+	text-align: left;
+}

@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+	.header-container .header-title {
+		font-size: 48px;
+	}
+}

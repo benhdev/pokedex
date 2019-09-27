@@ -1,0 +1,32 @@
+.footer {
+	float: left;
+	display: inline-block;
+	width: 100%;
+	padding: 0 60px 60px;
+}
+
+.footer .page-nav {
+	display: inline-block;
+	height: 50px;
+	line-height: 49px;
+	width: 50px;
+
+	border: 2px solid rgb(40, 40, 40);
+	border-radius: 25px;
+	color: rgb(40, 40, 40);
+
+	text-align: center;
+	transition: all ease-in-out 0.15s;
+
+}
+
+.footer .page-nav:hover {
+	background-color: rgb(40, 40, 40);
+	color: white;
+}
+.footer .page-nav:first-child {
+	float: left;
+}
+.footer .page-nav:last-child {
+	float: right;
+}
