@@ -5,7 +5,7 @@ session_start();
 
 // get the absolute path for the directory
 $dirname = dirname(__DIR__, 1);
-// auto load the composer packages used
+// auto load the composer packages used & model classes
 require_once("$dirname/vendor/autoload.php");
 
 ?>

@@ -25,6 +25,7 @@ class Pokemon {
 		// divide height and weight by 10
 		// to get the value in meters/kilograms
 
+		// so we can display no result on the front-end
 		if(isset($objPokemon->no_result)) {
 			$this->badResult = true;
 		}
@@ -53,6 +54,8 @@ class Pokemon {
 		// set the image url to the front default sprite
 		// echo json_encode($objPokemon);
 
+		// for some reason we have no image for this pokemon,
+		// so lets get the image for the species
 		if(empty($this->getImage()) and isset($this->strSpecies) and $this->getName() !== $this->getSpecies()) {
 			$modelPokemon = self::getByName($this->strSpecies);
 			$this->strImageUrl = $modelPokemon->getImage();
@@ -91,6 +94,7 @@ class Pokemon {
 		return $this->intWeight;
 	}
 
+	// Returns true if this pokemon was a bad result
 	public function isBadResult() {
 		return empty($this->badResult) ? false : true;
 	}
@@ -105,6 +109,7 @@ class Pokemon {
 
 		$api = new PokeApi;
 		$response = $api->resourceList(self::$endpoint, self::LIMIT, $offset);
+		// save the raw result to the session
 		$_SESSION["pokemonResponse-$offset"] = $response;
 
 		$objResponse = json_decode($response);
