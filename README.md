@@ -9,10 +9,10 @@
 Clone the repository  
 `git clone https://github.com/benhdev/pokedex.git`
 
-Enter the repository
+Enter the repository  
 `cd pokedex`
 
-Run the composer update command, this updates the composer packages and runs phptest.sh & build.sh
+Run the composer update command, this updates the composer packages and runs phptest.sh & build.sh  
 `php php composer.phar update` or `composer update` if you installed composer globally
 
 ## Test
